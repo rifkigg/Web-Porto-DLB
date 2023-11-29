@@ -280,6 +280,7 @@ body.nav-active {
 }
 
 /* Hero */
+
 .hero {
   padding-block-start: 130px;
   background-image: url(/assets/images/hero-bg.png);
@@ -326,6 +327,7 @@ body.nav-active {
 }
 
 /* About Us */
+
 .process-banner {
   display: none;
 }
@@ -360,6 +362,7 @@ body.nav-active {
 }
 
 /* Testimoni */
+
 .work-card .card-banner {
   border-radius: var(--radius-40);
   margin-block-end: 20px;
@@ -382,6 +385,7 @@ body.nav-active {
   margin-block-start: 60px;
   margin-inline: auto;
 }
+
 /* Footer */
 
 .footer {
@@ -440,4 +444,314 @@ body.nav-active {
   align-items: center;
   gap: 20px;
   scroll-margin-block-start: 20px;
+}
+
+/* Responsive */
+
+/* untuk layar yang lebih besar dari 575px */
+
+@media (min-width: 575px) {
+  /* reused style */
+
+  .container {
+    max-width: 500px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  /* Header */
+
+  .header .container {
+    max-width: unset;
+  }
+}
+
+/* untuk layar yang lebih besar dari 768px */
+
+@media (min-width: 768px) {
+  /* custom property */
+
+  :root {
+    /* typografi */
+
+    /* font size */
+
+    --fontSize-1: 5.5rem;
+    --fontSize-2: 4rem;
+
+    /* spacing */
+
+    --section-spacing: 150px;
+  }
+
+  /* reused style */
+
+  .container {
+    max-width: 720px;
+  }
+
+  .section-text {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .btn-secondary {
+    color: var(--text-white);
+    height: 52px;
+    border: 2px solid var(--border-blue-jeans);
+    padding-inline: 40px;
+  }
+
+  .btn-secondary:is(:hover, :focus-visible) {
+    background-color: var(--bg-blue-jeans);
+  }
+
+  /* header */
+
+  .header .btn {
+    display: grid;
+    margin-inline: auto 30px;
+  }
+
+  /* hero */
+
+  .hero {
+    padding-block: 180px;
+  }
+
+  .hero-content {
+    max-width: 560px;
+  }
+
+  .hero .input-wrapper {
+    display: flex;
+    align-items: center;
+    grid-area: 15px;
+  }
+
+  .hero .btn {
+    margin-block-start: 0;
+    min-width: max-content;
+  }
+
+  .hero-banner {
+    position: relative;
+    max-width: 540px;
+    margin-inline: auto;
+  }
+
+  .hero .shape {
+    display: block;
+    position: absolute;
+    filter: var(--shadow-2);
+  }
+
+  .hero .shape-1 {
+    width: 13%;
+    top: 350px;
+    left: 80px;
+  }
+
+  .hero .shape-2 {
+    width: 16%;
+    top: 440px;
+    left: -20px;
+  }
+
+  .hero .shape-3 {
+    width: 20%;
+    bottom: -20px;
+    left: 80px;
+  }
+
+  /* footer */
+
+  .footer-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* untuk layar yang lebih besar dari 992px */
+
+@media (min-width: 992px) {
+  /* reused style */
+
+  .container {
+    max-width: 960px;
+    padding-inline: 40px;
+  }
+
+  body.nav-active {
+    overflow: auto;
+  }
+
+  /* header */
+  .nav-open-btn,
+  .overlay {
+    display: none;
+  }
+
+  .header .logo img {
+    width: max-content;
+  }
+
+  .navbar,
+  .navbar.active {
+    all: unset;
+    margin-inline-start: 80px;
+  }
+
+  .navbar-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .navbar-list > li:not(:last-child) {
+    margin-block-end: 0;
+  }
+
+  .navbar-link {
+    color: var(--text-white);
+    transition: var(--transition-1);
+  }
+
+  .navbar-link:is(:hover, :focus-visible) {
+    color: var(--text-white-alpha-60);
+  }
+
+  .header .btn {
+    margin-inline-end: 0;
+  }
+
+  /* hero */
+
+  .hero .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  /* about us */
+
+  .process-banner {
+    display: block;
+    max-width: 540px;
+    margin-inline: auto;
+  }
+
+  .process .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .process-item {
+    text-align: left;
+  }
+
+  .process-item .item-icon {
+    margin-inline: 0;
+  }
+
+  .process .grid-list {
+    gap: 30px 40px;
+  }
+
+  /* testimoni */
+
+  .works .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* footer */
+
+  .footer-top .container {
+    grid-template-columns: 0.5fr 1fr;
+  }
+
+  .footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-bottom-list {
+    margin-block-start: 0;
+    gap: 50px;
+  }
+}
+
+/* untuk layar yang lebih besar dari 1200px */
+
+@media (min-width: 1200px) {
+  /* custom property */
+
+  :root {
+    /* typografi */
+
+    /* font size */
+    --fontSize-1: 7rem;
+    --fontSize-3: 2.8rem;
+  }
+
+  /* reused style */
+
+  .container {
+    max-width: 1140px;
+  }
+
+  .section-text {
+    max-width: 750px;
+  }
+}
+
+/* untuk layar yang lebih besar dari 1400px */
+
+@media (min-width: 1400px) {
+  /* custom property */
+
+  :root {
+    /* typografi */
+
+    /* font size */
+    --fontSize-1: 8rem;
+  }
+  /* reused style */
+  .container {
+    max-width: 1350px;
+  }
+  .section-text {
+    margin-block-end: 60px;
+  }
+
+  /* Hero */
+
+  .hero-text {
+    font-size: 1.8rem;
+    margin-block: 40px;
+  }
+
+  /* about us */
+
+  .process .wrapper {
+    grid-template-columns: 0.7fr 1fr;
+    gap: 130px;
+  }
+
+  .process-item .item-icon {
+    width: 80px;
+  }
+
+  .process-item .item-title {
+    margin-block: 25px 15px;
+  }
+
+  .process .grid-list {
+    row-gap: 50px;
+  }
 }
