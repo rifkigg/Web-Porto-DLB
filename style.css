@@ -517,35 +517,7 @@ body.nav-active {
     margin-inline: auto 30px;
   }
 
-  .popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #f1f1f1;
-    padding: 20px;
-    border: 1px solid #ccc;
-  }
 
-  .popup-content {
-    text-align: center;
-  }
-
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
 
   /* hero */
 

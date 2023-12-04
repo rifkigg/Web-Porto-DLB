@@ -41,11 +41,3 @@ window.addEventListener("mousemove", (event) => {
     );
   }
 });
-// pop up
-document.getElementById("showPopupBtn").addEventListener("click", function () {
-  document.getElementById("popup").style.display = "block";
-});
-
-document.getElementById("closePopupBtn").addEventListener("click", function () {
-  document.getElementById("popup").style.display = "none";
-});
